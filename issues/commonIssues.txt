@@ -1,0 +1,16 @@
+#### Assuming:
+- Paraview 5.11.0, pvpython version 3.9.13
+- System python interpreter version: 3.9.x
+
+# In Windows
+When activating the virtual environment, to make PyQt5 functional you might need to copy python3.dll into Paraview-{the rest}/bin folder. I'm providing python3.dll found in the installation of Python 3.9.12.
+
+# QtWebEngine fails to show url!!
+export QTWEBENGINE_DISABLE_SANDBOX=1
+
+# solving error libGL error: MESA-LOADER: failed to open iris, swrast. Could come from an OpenGL error when launching the application.
+export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libstdc++.so.6
+
+# to install kitaware glance, simply follow the instructions from https://github.com/Kitware/glance
+# install npm 16.x. Newer versions will fail. 
+# After generating a production build, the files in dist/ can be served and used for visualization.

@@ -1,0 +1,8 @@
+# folders
+qtenv
+*.idea
+*.vscode
+
+# files
+*.vtkjs
+*__pycache__*

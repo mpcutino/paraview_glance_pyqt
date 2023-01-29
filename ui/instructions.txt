@@ -1,0 +1,3 @@
+# To generate a python file from a Qt5 ui.
+
+pyuic5 main.ui -o main_ui.py
